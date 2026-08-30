@@ -3,4 +3,4 @@
 # 被 client-modules 扫描进 window.__DSH_BOOT__，无需在这里额外声明。
 - insert:
     - id: ui-voice-input
-      name: @difimim/dsh-voice-input
+      name: '@difimim/dsh-voice-input'
