@@ -1,0 +1,6 @@
+# dsh-voice-input 的 bundle patch：把一个纯客户端 UI 插件行挂进 host 组合。
+# 浏览器半（lib/client.js）通过 package.json 的 dsh.client 声明 + exports["./client"]
+# 被 client-modules 扫描进 window.__DSH_BOOT__，无需在这里额外声明。
+- insert:
+    - id: ui-voice-input
+      name: @difimim/dsh-voice-input
